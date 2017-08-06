@@ -1,12 +1,12 @@
 -- pairs.hs
 module Pairs where
 pairs :: String -> [[Char]]
-pairs inputstr = 
-    if length inputstr <= 2
+pairs s = 
+    if length s <= 2
         then 
-            if length inputstr == 1
-                then [inputstr ++ "_"]
+            if length s == 1
+                then [s ++ "_"]
             else 
-                [inputstr]
+                [s]
     else
-        [take 2 inputstr] ++ (pairs $ drop 2 inputstr)
+        [take 2 s] ++ (pairs $ drop 2 s)
