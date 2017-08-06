@@ -1,4 +1,4 @@
--- pairs.hs
+-- Pairs.hs
 module Pairs where
 pairs :: String -> [[Char]]
 pairs s = 
